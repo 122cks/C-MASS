@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>씨마스 AI·디지털 교육자료 계약 안내</title>
+    <meta name="description" content="씨마스 AI·디지털 교육자료 과목별 체험 및 계약 안내 페이지입니다.">
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css" />
+
+    <style>
+      :root {
+        --primary: #2563eb;
+        --primary-hover: #1d4ed8;
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --text-main: #0f172a;
+        --text-sub: #475569;
+        --border: #e2e8f0;
+        --radius: 16px;
+        --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-main);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        padding-bottom: 90px; /* 모바일 하단바 공간 확보 */
+      }
+
+      .container { max-width: 1024px; margin: 0 auto; padding: 0 20px; }
+      a { text-decoration: none; color: inherit; }
+      h1, h2, h3, h4, h5 { color: var(--text-main); margin: 0; line-height: 1.3; }
+
+      /* Header */
+      .site-header {
+        background: var(--card-bg);
+        padding: 40px 0;
+        text-align: center;
+        border-bottom: 1px solid var(--border);
+      }
+      .site-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; }
+      .site-header .subtitle { font-size: 1.1rem; color: var(--text-sub); margin-bottom: 16px; }
+      .contact-badge {
+        display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+        background: var(--bg-color); padding: 12px 24px; border-radius: 30px;
+        font-size: 0.95rem; color: var(--text-sub); font-weight: 500;
+      }
+      .contact-badge a { color: var(--primary); font-weight: 600; }
+
+      /* Sections */
+      section { background: var(--card-bg); border-radius: var(--radius); padding: 40px; margin: 32px 0; box-shadow: var(--shadow); }
+      .section-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; border-bottom: 2px solid var(--text-main); padding-bottom: 12px; display: inline-block; }
+
+      /* Grid Layout for Cards */
+      .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+
+      /* Product Cards */
+      .card {
+        border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+        display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    
+      .card-cover {
+          height: auto; display: block; background: #f8fafc; padding: 0;
+        }
+      .card-cover img { width:100%; height:auto; object-fit:contain; display:block; }
+      .cover-e { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+      .cover-m { background: linear-gradient(135deg, #0ea5e9, #10b981); }
+      .cover-h { background: linear-gradient(135deg, #8b5cf6, #ec4899); }
+    
+      .card-cover h3 { color: #fff; font-size: 1.5rem; font-weight: 800; margin-bottom: 4px; }
+      .card-cover p { margin: 0; font-size: 0.9rem; opacity: 0.9; font-weight: 500; }
+
+      .card-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+      .price-wrap { margin-bottom: 12px; }
+      .sku { font-size: 0.95rem; color: var(--text-sub); margin-bottom: 10px; white-space: nowrap; overflow-wrap: normal; word-break: keep-all; }
+      .meta { min-height: 100px; display:flex; flex-direction:column; justify-content:center; }
+
+      /* Prevent button text breaking and keep action buttons on one line */
+      .btn-group { display:flex; gap:8px; margin-bottom:12px; flex-wrap:nowrap; }
+      .btn { display:inline-flex; align-items:center; justify-content:center; width:auto; padding:10px 14px; border-radius:8px; font-weight:600; font-size:0.95rem; cursor:pointer; transition:all 0.2s; border:none; white-space:nowrap; min-width:120px; }
+      .btn-s2b { white-space:nowrap; }
+
+      @media (max-width: 480px) {
+        .btn { white-space:normal; min-width:0; }
+        .meta { min-height: auto; }
+        .btn-group { flex-wrap:wrap; }
+      }
+      .price-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 1.1rem; font-weight: 700; }
+      .price-tag { background: #f1f5f9; color: #64748b; font-size: 0.8rem; padding: 4px 8px; border-radius: 6px; font-weight: 600; }
+    
+      .btn-group { display: flex; gap: 8px; margin-bottom: 12px; }
+      .btn { display: inline-flex; align-items: center; justify-content: center; width: 100%; padding: 12px; border-radius: 8px; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: all 0.2s; border: none; }
+      .btn-primary { background: var(--primary); color: #fff; }
+      .btn-primary:hover { background: var(--primary-hover); }
+      .btn-outline { background: #fff; border: 1px solid var(--border); color: var(--text-main); }
+      .btn-outline:hover { background: var(--bg-color); border-color: #cbd5e1; }
+      .btn-s2b { background: #1e293b; color: #fff; margin-top: auto; }
+      .btn-s2b:hover { background: #0f172a; }
+
+      /* Info Grid (Order Guide & Contact) */
+      .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+      .info-card { background: var(--card-bg); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+      .info-card h3 { font-size: 1.3rem; margin-bottom: 16px; font-weight: 700; }
+      .info-card p { color: var(--text-sub); margin-bottom: 8px; }
+      .info-card strong { color: var(--text-main); }
+
+      /* Step Lists */
+      .step-list { list-style: none; padding: 0; margin: 0 0 24px 0; }
+      .step-list li { position: relative; padding-left: 36px; margin-bottom: 12px; color: var(--text-sub); }
+      .step-list li::before {
+        content: counter(step); counter-increment: step;
+        position: absolute; left: 0; top: 0; width: 24px; height: 24px;
+        background: var(--bg-color); border: 1px solid var(--border); color: var(--primary);
+        border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        font-size: 0.85rem; font-weight: 700;
+      }
+      .step-list { counter-reset: step; }
+
+      .guide-box { background: #eff6ff; border: 1px solid #bfdbfe; padding: 20px; border-radius: 12px; margin-bottom: 24px; }
+      .guide-box p { margin: 0; color: #1e3a8a; font-weight: 500; }
+
+      /* Mobile Bottom CTA */
+      .mobile-cta {
+        position: fixed; bottom: 0; left: 0; right: 0;
+        background: #fff; padding: 16px 20px; box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+        display: flex; gap: 12px; z-index: 1000; border-top: 1px solid var(--border);
+      }
+      .mobile-cta .btn { flex: 1; padding: 14px; font-size: 1rem; }
+
+      /* Footer */
+      footer { text-align: center; padding: 20px; color: var(--text-sub); font-size: 0.9rem; }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .site-header { padding: 30px 20px; }
+        .site-header h1 { font-size: 1.6rem; }
+        section { padding: 24px 20px; margin: 20px 0; }
+        .info-grid { grid-template-columns: 1fr; }
+        .contact-badge { flex-direction: column; align-items: center; gap: 4px; padding: 12px; }
+        .card-cover { height: auto; }
+        .card-cover img { height: auto; }
+      }
+      @media (min-width: 769px) {
+        .mobile-cta { display: none; }
+        body { padding-bottom: 0; }
+      }
+      /* Downloads section styling */
+      .downloads-wrap { display:flex; justify-content:flex-end; }
+      .download-list .btn { justify-content:flex-start; gap:12px; width:100%; padding:12px 14px; text-align:left; }
+      .download-list .btn span.icon { display:inline-block; width:28px; text-align:center; font-size:1.05rem; }
+      @media (max-width: 768px) {
+        .downloads-wrap { justify-content:center; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="container">
+        <h1>씨마스 AI·디지털 교육자료 계약 안내</h1>
+        <div class="contact-badge">
+          <span>담당자: <strong>조경수 차장</strong></span>
+          <span>전화: <a href="tel:0222741590">02-2274-1590 (내선 163)</a></span>
+          <span>이메일: <a href="mailto:122cks@cmass.co.kr">122cks@cmass.co.kr</a></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+    
+      <section id="products">
+        <h2 class="section-title">과목별 체험 및 상품 안내</h2>
+        <div class="product-grid">
+        
+          <article class="card">
+            <div class="card-cover">
+              <img src="../aidt-elem-info.jpg" alt="초등 정보" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="meta">
+                <div class="price-wrap">
+                  <div class="price-item"><span class="price-tag">학기</span> 66,000원</div>
+                </div>
+              </div>
+              <div class="actions" style="margin-top:auto;display:flex;flex-direction:column;gap:10px;align-items:stretch;">
+                <div class="sku">S2B 물품번호: <strong>202508284260589</strong></div>
+                <div class="btn-group" style="display:flex;gap:8px;flex-wrap:nowrap;">
+                  <a href="https://viewer.cmass.kr/html/aidt/aidt_e/view_aidt_e.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline">체험하기</a>
+                  <a href="https://www.s2b.kr/Edutech/product/productDetail.do?estimatecode=202508284260589#tab2" target="_blank" rel="noopener noreferrer" class="btn btn-s2b">학교장터로 이동</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="../aidt-mid-info.jpg" alt="중학 정보" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="meta">
+                <div class="price-wrap">
+                  <div class="price-item"><span class="price-tag">1학기</span> 55,000원</div>
+                  <div class="price-item"><span class="price-tag">1년</span> 71,500원</div>
+                </div>
+              </div>
+              <div class="actions" style="margin-top:auto;display:flex;flex-direction:column;gap:10px;align-items:stretch;">
+                <div class="sku">S2B 물품번호: <strong>202508264201044</strong></div>
+                <div class="btn-group" style="display:flex;gap:8px;flex-wrap:nowrap;">
+                  <a href="https://viewer.cmass.kr/html/aidt/aidt_m/view_aidt_m.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline">체험하기</a>
+                  <a href="https://www.s2b.kr/Edutech/product/productDetail.do?estimatecode=202508264201044" target="_blank" rel="noopener noreferrer" class="btn btn-s2b">학교장터로 이동</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-cover">
+              <img src="../aidt-high-info.jpg" alt="고등 정보" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="meta">
+                <div class="price-wrap">
+                  <div class="price-item"><span class="price-tag">1학기</span> 55,000원</div>
+                </div>
+              </div>
+              <div class="actions" style="margin-top:auto;display:flex;flex-direction:column;gap:10px;align-items:stretch;">
+                <div class="sku">S2B 물품번호: <strong>202508264194534</strong></div>
+                <div class="btn-group" style="display:flex;gap:8px;flex-wrap:nowrap;">
+                  <a href="https://viewer.cmass.kr/html/aidt/aidt_h/view_aidt_h.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline">체험하기</a>
+                  <a href="https://www.s2b.kr/Edutech/product/productDetail.do?estimatecode=202508264194534" target="_blank" rel="noopener noreferrer" class="btn btn-s2b">학교장터로 이동</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>빠른 주문 절차</h3>
+          <ol class="step-list">
+            <li>학교장터(S2B) 접속</li>
+            <li>상품 검색 후 상세페이지 이동</li>
+            <li>견적 요청 및 계약 진행</li>
+          </ol>
+          <p>※ 복잡하시다면 바로 상담 신청을 남겨주세요.</p>
+        </div>
+      
+        <div class="info-card" style="display: flex; flex-direction: column; justify-content: center;">
+          <h3>도움이 필요하신가요?</h3>
+          <p>계약 진행이 어렵거나 궁금한 점이 있으시다면 언제든 편하게 문의해 주세요.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfth1YjyTEhykqcFiJ5QGDayMyPkeSrllM3dNN2bhjXkAsPag/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top: 16px;">온라인 상담 신청하기</a>
+        </div>
+      </div>
+
+      <section id="howto">
+        <h2 class="section-title">서비스 이용 가이드</h2>
+      
+        <div class="guide-box">
+          <p>💡 교육디지털패스(<a href="https://edupass.neisplus.kr" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">https://edupass.neisplus.kr</a>)에 가입한 계정으로 KERIS의 <strong>"AI·디지털 교육자료 포털"</strong>에 로그인하면 신청한 자료를 이용할 수 있습니다.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+          <div>
+            <h4>교직원 회원가입</h4>
+            <ol class="step-list">
+              <li>PC에서 교육디지털원패스 접속</li>
+              <li>[교직원 회원가입] 클릭</li>
+              <li>교직원 인증서 로그인 (인증서 선택 → 나이스 아이디 → 인증확인)</li>
+              <li>회원 정보 추가 입력 (비밀번호, 이메일 등)</li>
+              <li>가입 완료 및 포털 로그인</li>
+            </ol>
+          </div>
+
+          <section id="downloads">
+            <div class="downloads-wrap">
+              <div class="info-card" style="max-width:420px;">
+                <h3>자료 다운로드</h3>
+                <div class="download-list" style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
+                  <a href="../aidt-privacy-consent.hwp" download class="btn btn-outline">
+                    <span class="icon">📄</span>
+                    <span>학습지원 소프트웨어 개인정보 동의서</span>
+                  </a>
+                  <a href="../aidt-checklist.hwp" download class="btn btn-outline">
+                    <span class="icon">📄</span>
+                    <span>학습지원 소프트웨어 체크리스트</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div>
+            <h4>학생 회원가입</h4>
+            <ol class="step-list">
+              <li>교육디지털원패스 접속</li>
+              <li>[학생 회원가입] 클릭 후 약관 동의</li>
+              <li>학생 학적 정보 입력 (학교, 학년, 반, 번호, 이름 등)</li>
+              <li>본인확인 (휴대폰) 후 추가 정보 입력</li>
+              <li>가입 완료 및 포털 로그인</li>
+            </ol>
+            <p style="font-size: 0.85rem; color: #64748b; margin-top: 12px;">※ 14세 미만 학생은 법정대리인의 동의가 필요합니다.<br>※ 회원가입 문의: 나이스플러스 고객센터 (1600-7440)</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="mobile-cta">
+      <a href="tel:0222741590" class="btn btn-outline">📞 전화 문의</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfth1YjyTEhykqcFiJ5QGDayMyPkeSrllM3dNN2bhjXkAsPag/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">상담 신청</a>
+    </div>
+
+    <footer>
+      <div class="container">
+        © C-MASS. 문의: 02-2274-1590 (내선 163)
+      </div>
+    </footer>
+
+  </body>
+  </html>
