@@ -56,7 +56,7 @@
         text-align: center;
         border-bottom: 1px solid var(--border);
       }
-      .site-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; }
+      .site-header h1 { font-size: clamp(1.25rem, 4.5vw, 2rem); font-weight: 800; margin-bottom: 12px; letter-spacing: -0.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
       .site-header .subtitle { font-size: 1.1rem; color: var(--text-sub); margin-bottom: 16px; }
       .contact-badge {
         display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 12px;
@@ -153,7 +153,7 @@
       /* Responsive */
       @media (max-width: 768px) {
         .site-header { padding: 30px 20px; }
-        .site-header h1 { font-size: 1.6rem; }
+        .site-header h1 { font-size: clamp(1.1rem, 5.5vw, 1.6rem); }
         section { padding: 24px 20px; margin: 20px 0; }
         .info-grid { grid-template-columns: 1fr; }
         .contact-badge { flex-direction: column; align-items: center; gap: 4px; padding: 12px; }
