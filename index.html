@@ -146,6 +146,8 @@
         .contact-badge { flex-direction: column; align-items: center; gap: 4px; padding: 12px; }
         .card-cover { height: auto; }
         .card-cover img { height: auto; }
+        .howto-grid { grid-template-columns: 1fr; }
+        .downloads-row { justify-content: center; }
       }
       @media (min-width: 769px) {
         .mobile-cta { display: none; }
@@ -268,7 +270,7 @@
           <p>💡 교육디지털패스(<a href="https://edupass.neisplus.kr" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">https://edupass.neisplus.kr</a>)에 가입한 계정으로 KERIS의 <strong>"AI·디지털 교육자료 포털"</strong>에 로그인하면 신청한 자료를 이용할 수 있습니다.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+        <div class="howto-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
           <div>
             <h4>교직원 회원가입</h4>
             <ol class="step-list">
@@ -280,24 +282,6 @@
             </ol>
           </div>
 
-          <section id="downloads">
-            <div class="downloads-wrap">
-              <div class="info-card" style="max-width:420px;">
-                <h3>자료 다운로드</h3>
-                <div class="download-list" style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
-                  <a href="aidt-privacy-consent.hwp" download class="btn btn-outline">
-                    <span class="icon">📄</span>
-                    <span>학습지원 소프트웨어 개인정보 동의서</span>
-                  </a>
-                  <a href="aidt-checklist.hwp" download class="btn btn-outline">
-                    <span class="icon">📄</span>
-                    <span>학습지원 소프트웨어 체크리스트</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
           <div>
             <h4>학생 회원가입</h4>
             <ol class="step-list">
@@ -308,6 +292,22 @@
               <li>가입 완료 및 포털 로그인</li>
             </ol>
             <p style="font-size: 0.85rem; color: #64748b; margin-top: 12px;">※ 14세 미만 학생은 법정대리인의 동의가 필요합니다.<br>※ 회원가입 문의: 나이스플러스 고객센터 (1600-7440)</p>
+          </div>
+        </div>
+
+        <div class="downloads-row" style="display:flex; justify-content:flex-end; margin-top:18px;">
+          <div class="info-card" style="max-width:420px;">
+            <h3>학습지원 소프트웨어 학운위 양식 다운로드</h3>
+            <div class="download-list" style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
+              <a href="aidt-privacy-consent.hwp" download class="btn btn-outline">
+                <span class="icon">📄</span>
+                <span>학습지원 소프트웨어 개인정보 동의서</span>
+              </a>
+              <a href="aidt-checklist.hwp" download class="btn btn-outline">
+                <span class="icon">📄</span>
+                <span>학습지원 소프트웨어 체크리스트</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
