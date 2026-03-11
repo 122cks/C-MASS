@@ -80,7 +80,18 @@
       .card-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
       .price-wrap { margin-bottom: 12px; }
       .sku { font-size: 0.95rem; color: var(--text-sub); margin-bottom: 10px; }
-      .meta { min-height: 84px; display:flex; flex-direction:column; justify-content:center; }
+      .meta { min-height: 100px; display:flex; flex-direction:column; justify-content:center; }
+
+      /* Prevent button text breaking and keep action buttons on one line */
+      .btn-group { display:flex; gap:8px; margin-bottom:12px; flex-wrap:nowrap; }
+      .btn { display:inline-flex; align-items:center; justify-content:center; width:auto; padding:10px 14px; border-radius:8px; font-weight:600; font-size:0.95rem; cursor:pointer; transition:all 0.2s; border:none; white-space:nowrap; min-width:120px; }
+      .btn-s2b { white-space:nowrap; }
+
+      @media (max-width: 480px) {
+        .btn { white-space:normal; min-width:0; }
+        .meta { min-height: auto; }
+        .btn-group { flex-wrap:wrap; }
+      }
       .price-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 1.1rem; font-weight: 700; }
       .price-tag { background: #f1f5f9; color: #64748b; font-size: 0.8rem; padding: 4px 8px; border-radius: 6px; font-weight: 600; }
     
