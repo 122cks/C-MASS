@@ -153,8 +153,8 @@
       }
       /* Downloads section styling */
       .downloads-wrap { display:flex; justify-content:flex-end; }
-      .download-list .btn { justify-content:flex-start; gap:12px; width:100%; padding:12px 14px; text-align:left; }
-      .download-list .btn span.icon { display:inline-block; width:28px; text-align:center; font-size:1.05rem; }
+      .download-list .btn { justify-content:flex-start; gap:12px; width:100%; padding:12px 14px; text-align:left; align-items:center; }
+      .download-list .btn .thumb { display:inline-block; width:40px; height:40px; object-fit:cover; border-radius:6px; flex:0 0 40px; }
       @media (max-width: 768px) {
         .downloads-wrap { justify-content:center; }
       }
@@ -297,14 +297,14 @@
           <div class="info-card" style="max-width:420px;">
             <h3>학습지원 소프트웨어 학운위 양식 다운로드</h3>
             <div class="download-list" style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
-              <a href="../aidt-privacy-consent.hwp" download class="btn btn-outline">
-                <span class="icon">📄</span>
-                <span>학습지원 소프트웨어 개인정보 동의서</span>
-              </a>
-              <a href="../aidt-checklist.hwp" download class="btn btn-outline">
-                <span class="icon">📄</span>
-                <span>학습지원 소프트웨어 체크리스트</span>
-              </a>
+                  <a href="../aidt-privacy-consent.hwp" download class="btn btn-outline">
+                    <img src="../text-card0102.png" alt="" class="thumb" loading="lazy">
+                    <span>학습지원 소프트웨어 개인정보 동의서</span>
+                  </a>
+                  <a href="../aidt-checklist.hwp" download class="btn btn-outline">
+                    <img src="../text-card0102.png" alt="" class="thumb" loading="lazy">
+                    <span>학습지원 소프트웨어 체크리스트</span>
+                  </a>
             </div>
           </div>
         </div>
